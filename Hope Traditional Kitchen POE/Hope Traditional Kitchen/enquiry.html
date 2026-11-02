@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquiry | Hope Traditional Kitchen</title>
+    <meta name="description" content="Make an enquiry about table bookings or catering.">
+    <meta name="keywords" content="enquiry, booking, catering, contact">
+    <meta name="author" content="Your Name">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Hope Traditional Kitchen</h1>
+        <nav>
+            <a href="index.html">Home</a> &nbsp;|&nbsp;
+            <a href="about.html">About</a> &nbsp;|&nbsp;
+            <a href="products.html">Menu</a> &nbsp;|&nbsp;
+            <a href="enquiry.html">Enquiry</a> &nbsp;|&nbsp;
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Make an Enquiry</h1>
+        <p>Have a question about our menu, catering, or bookings? Please complete the form below.</p>
+
+        <form id="enquiryForm" action="#" method="post">
+            <fieldset>
+                <legend>Your Details</legend>
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" required><br><br>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone"><br><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Enquiry Details</legend>
+                <label for="enquiry-type">Type of Enquiry:</label>
+                <select id="enquiry-type" name="enquiry-type">
+                    <option value="general">General Enquiry</option>
+                    <option value="booking">Table Reservation</option>
+                    <option value="catering">Catering / Functions</option>
+                </select><br><br>
+
+                <label for="message">Your Message:</label><br>
+                <textarea id="message" name="message" rows="5" required></textarea><br><br>
+            </fieldset>
+
+            <input type="submit" value="Submit Enquiry">
+        </form>
+        
+        <!-- Response box -->
+        <div id="enquiryResponse" style="display:none; color: green; font-weight: bold; margin-top: 15px;"></div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Hope Traditional Kitchen. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | Hope Traditional Kitchen</title>
+    <meta name="description" content="View our delicious menu of traditional South African food.">
+    <meta name="keywords" content="menu, pap, braai, stew, traditional food">
+    <meta name="author" content="Your Name">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Hope Traditional Kitchen</h1>
+        <nav>
+            <a href="index.html">Home</a> &nbsp;|&nbsp;
+            <a href="about.html">About</a> &nbsp;|&nbsp;
+            <a href="products.html">Menu</a> &nbsp;|&nbsp;
+            <a href="enquiry.html">Enquiry</a> &nbsp;|&nbsp;
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Our Menu</h1>
+        <p>Discover authentic home-style South African cuisine. All dishes are prepared fresh using traditional recipes and quality local ingredients.</p>
+
+        <!-- Search Bar -->
+        <section>
+            <input type="text" id="menuSearch" placeholder="Search menu (e.g. pap, stew)..." style="padding: 10px; width: 100%; max-width: 400px; border-radius: 5px; border: 1px solid #ccc;">
+        </section>
+
+        <!-- Dynamic Menu Area -->
+        <section>
+            <h2>Food Menu</h2>
+            <ul id="dynamic-menu">
+                <!-- JS will load items here -->
+            </ul>
+        </section>
+
+        <!-- Accordion -->
+        <section>
+            <h2>Dietary Information</h2>
+            <button class="accordion">Do you have vegetarian options?</button>
+            <div class="panel"><p>Yes, we offer Morogo and Pap, as well as various vegetable sides.</p></div>
+            
+            <button class="accordion">Are there gluten-free options?</button>
+            <div class="panel"><p>Most of our pap and meat dishes are naturally gluten-free. Please inform staff of allergies.</p></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Hope Traditional Kitchen. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

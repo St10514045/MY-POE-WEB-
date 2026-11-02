@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Hope Traditional Kitchen</title>
+    <meta name="description" content="Contact us or find our locations in Polokwane and Seshego.">
+    <meta name="keywords" content="contact, location, map, Polokwane, Seshego">
+    <meta name="author" content="Your Name">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body>
+
+    <header>
+        <h1>Hope Traditional Kitchen</h1>
+        <nav>
+            <a href="index.html">Home</a> &nbsp;|&nbsp;
+            <a href="about.html">About</a> &nbsp;|&nbsp;
+            <a href="products.html">Menu</a> &nbsp;|&nbsp;
+            <a href="enquiry.html">Enquiry</a> &nbsp;|&nbsp;
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Contact Us</h1>
+        <p>We would love to hear from you. Visit us, call us, or send a message.</p>
+
+        <section>
+            <h2>Contact Information</h2>
+            <ul>
+                <li><strong>Phone:</strong> 085 166 4067</li>
+                <li><strong>WhatsApp:</strong> 082 355 6899</li>
+                <li><strong>Email:</strong> info@hopetraditionalkitchen.co.za</li>
+                <li><strong>Opening Hours:</strong>
+                    <ul>
+                        <li>Monday - Thursday: 10:00 - 20:00</li>
+                        <li>Friday - Saturday: 10:00 - 21:00</li>
+                        <li>Sunday: 10:00 - 16:00</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Our Locations</h2>
+            <!-- Interactive Map -->
+            <div id="map"></div>
+            <p><strong>Main Restaurant:</strong> 123 Thabo Mbeki Street, Polokwane Central</p>
+            <p><strong>Second Branch:</strong> 45 Industrial Road, Seshego</p>
+        </section>
+
+        <section>
+            <h2>Send Us a Message</h2>
+            <form id="contactForm" action="#" method="post">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+                <input type="submit" value="Send Message">
+            </form>
+            <!-- Response box -->
+            <div id="contactResponse" style="display:none; color: green; font-weight: bold; margin-top: 15px;"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Hope Traditional Kitchen. All rights reserved.</p>
+    </footer>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
